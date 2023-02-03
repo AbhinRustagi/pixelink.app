@@ -1,3 +1,7 @@
-export const Card = () => {
-	return <div></div>
+interface CardProps {
+	title: string
+}
+
+export const Card: React.FC<CardProps> = ({ title }) => {
+	return <div>{title}</div>
 }

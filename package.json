@@ -10,16 +10,14 @@
 		"prepare": "husky install",
 		"storybook": "start-storybook -p 6006",
 		"build-storybook": "build-storybook",
-		"cypress:open": "cypress open"
+		"cypress:open": "cypress open",
+		"release": "standard-version"
 	},
 	"dependencies": {
 		"@emotion/cache": "^11.10.5",
 		"@emotion/react": "^11.10.5",
 		"@emotion/styled": "^11.10.5",
 		"@next/font": "13.1.6",
-		"@types/node": "18.11.18",
-		"@types/react": "18.0.27",
-		"@types/react-dom": "18.0.10",
 		"axios": "^1.2.6",
 		"eslint": "8.33.0",
 		"eslint-config-next": "13.1.6",
@@ -34,6 +32,9 @@
 	},
 	"devDependencies": {
 		"@babel/core": "^7.20.12",
+		"@commitlint/cli": "^17.4.2",
+		"@commitlint/config-conventional": "^17.4.2",
+		"@commitlint/format": "^17.4.0",
 		"@emotion/babel-plugin": "^11.10.5",
 		"@storybook/addon-actions": "^6.5.16",
 		"@storybook/addon-essentials": "^6.5.16",
@@ -43,11 +44,23 @@
 		"@storybook/manager-webpack5": "^6.5.16",
 		"@storybook/react": "^6.5.16",
 		"@storybook/testing-library": "^0.0.13",
+		"@types/next-seo": "^2.1.2",
+		"@types/node": "18.11.18",
+		"@types/react": "18.0.27",
+		"@types/react-dom": "18.0.10",
 		"babel-loader": "^8.3.0",
+		"commitizen": "^4.3.0",
 		"cypress": "^12.5.1",
+		"cz-conventional-changelog": "^3.3.0",
 		"eslint-plugin-storybook": "^0.6.10",
 		"husky": "^8.0.3",
 		"lint-staged": "^13.1.0",
-		"prettier": "^2.8.3"
+		"prettier": "^2.8.3",
+		"standard-version": "^9.5.0"
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
 	}
 }
